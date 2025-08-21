@@ -8,5 +8,3 @@ jobs:
               uses: actions/checkout@v4
             - name: Run hola-mundo.js
               run: node holaMundo.js 
-              with: 
-              node-version: '18'
