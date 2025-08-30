@@ -2,9 +2,10 @@ name: Hola Mundo
 on:
   push: 
     branches: 
+     - 'master'
      - 'main'
   pull_request:
-    branches: 'main'
+    branches: 'master'
 jobs:
     hola-mundo:
         runs-on: ubuntu-latest
