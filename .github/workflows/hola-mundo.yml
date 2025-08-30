@@ -1,5 +1,10 @@
 name: Hola Mundo
-on: [push]
+on:
+  push: 
+    branches: 
+      'main'
+  pull_request:
+    branches: 'main'
 jobs:
     hola-mundo:
         runs-on: ubuntu-latest
@@ -7,4 +12,4 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
             - name: Run hola-mundo.js
-              run: node holaMundo.js 
+              run: node holaMundo.js
